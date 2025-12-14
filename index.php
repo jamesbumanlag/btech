@@ -46,12 +46,12 @@
 
     <section class="about border" id="about">
         <div class="about-container">
-            <h1>About BTech Solution</h1>
+            <h1>About Us</h1>
             <p class="first_paragraph">At BTech Solution, we believe reliable tech support should be simple, honest, and stress-free.
                 With over 10 years of IT experience, we help individuals and small businesses solve everyday tech frustrations—whether it’s a slow computer, Wi-Fi problems, software issues, hardware setup, or general troubleshooting.
             </p>
 
-            <h3>Why People Choose Us:</h3>
+            <h3>Why People Choose Us</h3>
             <ul>
                 <li>Clear, honest communication</li>
                 <li>affordable rates with no surprises</li>
