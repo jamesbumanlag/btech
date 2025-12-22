@@ -9,6 +9,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 
 
@@ -27,17 +30,17 @@
 
             <a href="">Call a Tech</a>
         </div>
-        <img src="images/techsupport.png" alt="">
+        <!-- <img src="images/techsupport.png" alt=""> -->
     </section>
 
     <section class="gallery border" id="gallery">
         <div class="gallery_container">
             <h1>Gallery</h1>
             <div class="gallery_images">
-                <img src="gallery/gallery_1.jpg" alt="">
-                <img src="gallery/gallery_2.jpg" alt="">
-                <img src="gallery/gallery_3.jpg" alt="">
-                <img src="gallery/gallery_4.jpg" alt="">
+                <img src="gallery/motherboard.png" alt="">
+                <img src="gallery/network.png" alt="">
+                <img src="gallery/ssd.png" alt="">
+                <img src="gallery/windows.png" alt="">
                 <img src="gallery/gallery_5.jpg" alt="">
                 <img src="gallery/gallery_6.jpg" alt="">
             </div>

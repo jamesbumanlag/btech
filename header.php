@@ -1,6 +1,8 @@
 <header class="border">
     <nav>
-        <div class="title-page"><img src="images/virtual.png" alt=""><h1>BTech Solution</h1></div>
+        <div class="title-page"><img src="images/virtual.png" alt="BTech Logo-image">
+            <h1>BTech Solution</h1>
+        </div>
         <ul>
             
             <li><a href="#">Services</a></li>
