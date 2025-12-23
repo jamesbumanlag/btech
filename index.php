@@ -34,8 +34,9 @@
     </section>
 
     <section class="gallery border" id="gallery">
+         
         <div class="gallery_container">
-            <h1>Gallery</h1>
+           <h1 class="border">Services</h1>
             <div class="gallery_images">
                 <img src="gallery/motherboard.png" alt="">
                 <img src="gallery/network.png" alt="">
@@ -70,7 +71,7 @@
 
 
 
-  
+<script src="script.js" defer></script>
 
 </body>
 </html>
