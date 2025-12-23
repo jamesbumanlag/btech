@@ -37,15 +37,40 @@
          
         <div class="gallery_container">
            <h1 class="border">Services</h1>
+
             <div class="gallery_images">
-                <img src="gallery/motherboard.png" alt="">
-                <img src="gallery/network.png" alt="">
-                <img src="gallery/ssd.png" alt="">
-                <img src="gallery/windows.png" alt="">
-                <img src="gallery/gallery_5.jpg" alt="">
-                <img src="gallery/gallery_6.jpg" alt="">
-            </div>
-        </div>
+                <div class="services-tile">
+                    <img src="gallery/motherboard.png" alt="">
+                    <h4>Computer and Laptop Support</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                </div>
+                <div class="services-tile">
+                    <img src="gallery/network.png" alt="">
+                    <h4>Network Troubleshooting</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                </div>
+                <div class="services-tile">
+                    <img src="gallery/ssd.png" alt="">
+                    <h4>Hardware Installion and Upgrade</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                </div>
+                <div class="services-tile">
+                    <img src="gallery/windows.png" alt="">
+                    <h4>Operating System Installation</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                </div>
+                <div class="services-tile">
+                    <img src="gallery/gallery_5.jpg" alt="">
+                    <h4>Virus and Malware Removal</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                </div>
+                <div class="services-tile">
+                    <img src="gallery/gallery_6.jpg" alt="">
+                    <h4>Web Development</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                </div>
+            </div> <!-- end gallery images -->
+        </div> <!-- end gallery container -->
     </section>
 
     <section class="about border" id="about">

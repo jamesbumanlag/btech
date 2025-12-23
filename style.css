@@ -271,13 +271,39 @@ nav .login-search .searchInput:focus {
 .gallery_container{
     border: 1px solid var(--main_font_color);
     border-radius: 15px;
-    background-color: rgb(218, 232, 245);
+    background-color: rgb(219, 226, 231);
 }
 
+.gallery_images{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(auto-fill, 1fr);
+    justify-items: center;
+    padding-bottom: 100px;
+    row-gap: 50px;
+}
 
-.gallery_container img{
-    width: 500px;
-    padding: 20px 40px;
+.services-tile{
+    width: 350px;
+
+}
+
+.services-tile img{
+    width: 100%;
+    border-radius: 20px;
+  
+}
+
+.services-tile h4{
+    margin-top: 20px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.services-tile p{
+    color: rgb(66, 64, 75);
+    font-size: 0.9rem;
+    text-align: left;
 }
 
 
