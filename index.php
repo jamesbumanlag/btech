@@ -30,7 +30,7 @@
 
             <a href="">Call a Tech</a>
         </div>
-        <!-- <img src="images/techsupport.png" alt=""> -->
+        <img src="images/techsupport.png" alt="">
     </section>
 
     <section class="gallery border" id="gallery">

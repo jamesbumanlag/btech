@@ -3,7 +3,7 @@
         <div class="title-page">
             <div class="logo-title">
                 <img src="images/virtual.png" alt="BTech Logo-image">
-                <h1>BTech Solution</h1>
+                <h1>JBTech Solution</h1>
             </div>
         
             <ul>
