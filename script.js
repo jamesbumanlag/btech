@@ -8,5 +8,3 @@ const header = document.querySelector('.border');
         header.classList.remove('scrolled')
         }
     })
-
-

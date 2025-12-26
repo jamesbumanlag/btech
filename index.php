@@ -76,19 +76,23 @@
     <section class="about border" id="about">
         <div class="about-container">
             <h1>About Us</h1>
-            <p class="first_paragraph">At BTech Solution, we believe reliable tech support should be simple, honest, and stress-free.
-                With over 10 years of IT experience, we help individuals and small businesses solve everyday tech frustrations—whether it’s a slow computer, Wi-Fi problems, software issues, hardware setup, or general troubleshooting.
-            </p>
+            <section class="aboutUs">
+                <img src="gallery/AboutJBTech.png" alt="about photo">
+                <div class="whyChooseUs">
+                    <h3>Why People Choose Us</h3>
+                   <ul>
+                        <li>Clear, honest communication</li>
+                        <li>affordable rates with no surprises</li>
+                        <li>Mobile Help - we come to you</li>
+                        <li>Practical Solutions, not tech talk</li>
+                        <li>Experienced support for Windows, macOS networks and mobile devices</li>
+                    </ul>    
+                    <p class="phrase">Tech shouldn't be stressful - let us take care of it for you</p>
+             
+                </div> <!-- End whyChooseUs -->
+            </section>
 
-            <h3>Why People Choose Us</h3>
-            <ul>
-                <li>Clear, honest communication</li>
-                <li>affordable rates with no surprises</li>
-                <li>Mobile Help - we come to you</li>
-                <li>Practical Solutions, not tech talk</li>
-                <li>Experienced support for Windows, macOS networks and mobile devices</li>
-            </ul>    
-                <p class="phrase">Tech shouldn't be stressful - let us take care of it for you</p>
+            
             
         </div>
     </section>

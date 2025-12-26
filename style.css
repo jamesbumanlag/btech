@@ -203,7 +203,7 @@ nav .login-search .searchInput:focus {
 }
 
 .hero img{
-    width: 80%;
+    width: 850px;
     position: relative;
     border-radius: 16px;
     overflow: hidden;
@@ -291,6 +291,7 @@ nav .login-search .searchInput:focus {
 .services-tile img{
     width: 100%;
     border-radius: 20px;
+    opacity: 0.8;
   
 }
 
@@ -341,4 +342,35 @@ nav .login-search .searchInput:focus {
 
 .about-container .phrase{
     margin-top: 30px;
+}
+
+
+.about-container .aboutUs{
+    display: flex;
+    gap: 100px;
+    background-color: rgb(219, 226, 231);
+    padding: 20px 40px;
+    
+}
+
+.aboutUs img{
+    width: 550px;
+}
+
+.aboutUs .whyChooseUs h3, li, p{
+    color: var(--header_footer_background);
+    font-size: 1rem;
+}
+
+
+.whyChooseUs p
+
+
+
+
+
+
+/* Responsive webpage settings */
+@media (){
+
 }
