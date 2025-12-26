@@ -87,7 +87,7 @@
                         <li>Practical Solutions, not tech talk</li>
                         <li>Experienced support for Windows, macOS networks and mobile devices</li>
                     </ul>    
-                    <p class="phrase">Tech shouldn't be stressful - let us take care of it for you</p>
+                    <p class="phrase">Technology shouldn't be stressful - let us take care of it for you</p>
              
                 </div> <!-- End whyChooseUs -->
             </section>
