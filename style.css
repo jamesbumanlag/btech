@@ -29,6 +29,7 @@ body{
 
 .border{
     padding: 20px 100px;
+
 }
 
 header {
@@ -311,8 +312,8 @@ nav .login-search .searchInput:focus {
 
 .about{
     display: grid;
-    place-items: center;    
-    
+    place-items: center;
+    scroll-margin-top: 150px;    
 }
 
 .about .about-container{
@@ -362,6 +363,7 @@ nav .login-search .searchInput:focus {
     border-radius: 20px;
     align-items: center;
     opacity: 0.9;
+    
 }
 
 .aboutUs img{
@@ -386,7 +388,7 @@ nav .login-search .searchInput:focus {
     background: 
     linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.8)),
     url(gallery/pexels-fauxels-background.jpg) center / cover no-repeat;
-
+    scroll-margin-top: 100px;
 
     
 }

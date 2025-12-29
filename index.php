@@ -73,9 +73,11 @@
         </div> <!-- end gallery container -->
     </section>
 
-    <section class="about border" id="about">
-        <div class="about-container">
-            <h1>About Us</h1>
+    <section class="about border" id="about" >
+        <div class="about-container" >
+            <div class="aboutUs-title">
+                <h1 >About Us</h1>
+            </div>
             <section class="aboutUs">
                 <img src="gallery/AboutJBTech.png" alt="about photo">
                 <div class="whyChooseUs">
