@@ -22,7 +22,7 @@
                 <input type="search" placeholder="Search..." class="searchInput">
                 <button name="search" class="searchButton"><img src="gallery/search2.png" alt=""></button>
             </div>
-            <button name="login" class="loginButton">Contact Us</button>
+            <button name="login" class="loginButton">Book Now</button>
         </div>
 
 

@@ -97,7 +97,33 @@
         </div>
     </section>
 
+    <section class="contact-us">
+        <div class="contact-us-container">
+            <h2 class="contact-title">Contact Us</h2>
+            <div class="contact-form-container" >
+                <form class="contact-form">
+                    <div class="form-input-container">
+                        <label for="fname">Name</label><br>
+                        <input type="text" id="fname" name="fname" class="form-input" require>
+                    </div>
+                    <div class="form-input-container">
+                        <label for="lname">Email</label><br>
+                        <input type="email" id="lname" name="lname" class="form-input" require>
+            
+                    </div>
+                    <div class="form-input-container">
+                        <label for="messsagebox">Type your message</label>
+                        <textarea name="messagebox" id="messagebox" rows="20" cols="50" class="messageBox form-input" require></textarea>
+                    </div>
+                </form>
+                <button type="submit" class="contactSubmit ">Submit</button>
+            </div>
+        </div>
+    </section>
 
+<?php
+    include "footer.php";
+?>
 
 
 <script src="script.js" defer></script>
