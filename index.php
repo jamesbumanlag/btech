@@ -97,10 +97,11 @@
         </div>
     </section>
 
-    <section class="contact-us">
+    <section class="contact-us border" id="contactUs">
         <div class="contact-us-container">
-            <h2 class="contact-title">Contact Us</h2>
+            
             <div class="contact-form-container" >
+                <h2 class="contact-title">Contact Us</h2>
                 <form class="contact-form">
                     <div class="form-input-container">
                         <label for="fname">Name</label><br>

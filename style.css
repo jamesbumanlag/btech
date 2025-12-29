@@ -377,9 +377,17 @@ nav .login-search .searchInput:focus {
 }
 
 .contact-us{
-    background-color: rgb(219, 226, 231);;
-    display: grid;
-    place-items: center;
+    background-color: rgb(219, 226, 231);
+    justify-content: center;
+    margin: 150px auto;
+    width: 70%;
+    margin-top: 150px;
+    border-radius: 15px;
+    background: 
+    linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.8)),
+    url(gallery/pexels-fauxels-background.jpg) center / cover no-repeat;
+
+
     
 }
 
