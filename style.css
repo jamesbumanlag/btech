@@ -409,10 +409,10 @@ nav .login-search .searchInput:focus {
     background-color: rgb(255, 255, 255);  
     padding: 50px 40px;
     border-radius: 15px;
-    
-    
-    
+     
 }
+
+
 
 .form-input{
     width: 100%;
@@ -432,7 +432,7 @@ nav .login-search .searchInput:focus {
     display:flex;
     flex-direction: column;
     width: 100%;
-    margin: none;
+    gap: 10px;
     
 }
 
@@ -449,6 +449,12 @@ nav .login-search .searchInput:focus {
     height: 2rem;
     border-radius: 15px;
      background: rgb(236, 236, 240);
+}
+
+
+.contactSubmit:hover{
+    background: rgb(147, 147, 150);
+    color: rgb(255, 255, 255);
 }
 
 .messageBox{
