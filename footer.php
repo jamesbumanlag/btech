@@ -1,5 +1,5 @@
 <footer>
     <div class="copyright">
-        <p>&copy; 2025 James Bumanlag</p>
+        <p>&copy; 2026 James Bumanlag</p>
     </div>
 </footer>
