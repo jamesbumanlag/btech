@@ -33,6 +33,8 @@
         <img src="images/technician.png" alt="">
     </section>
 
+
+    <!-- Start of Services Section -->
     <section class="gallery border" id="gallery">
          
         <div class="gallery_container">
