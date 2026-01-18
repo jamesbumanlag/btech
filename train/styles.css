@@ -80,14 +80,20 @@ hr{
 
 
 .receipt-container{
-    display: none;
-    margin: 20px auto;
     display: flex;
+    margin: 20px auto;
     flex-direction: column;
     gap: 10px;
     padding-inline-start: 50px;
 }
 
+.hidden{
+    display: none;
+}
+
+hr{
+    display: none;
+}
 
 .ticketPriceDisplay{
     margin-top: 20px;
@@ -102,3 +108,5 @@ hr{
 .receipt-container p:not(.ticketPriceDisplay) span{
     margin: 10px 5px;
 }
+
+

@@ -17,12 +17,12 @@
             <h1>Train Ticket</h1>
                 <form>
                     <div>
-                        <label for="inputName">Name</label>
+                        <label for="inputName">Name: </label>
                         <input type="text" id="inputName" placeholder="Type your name" class="inputDesign">
                     </div>
             
                     <div>
-                        <label for="from">From</label><br>
+                        <label for="from">Origin</label><br>
                         <select name="from" id="from" class="selectPassenger">
                             <option value="default">Select</option>
                             <option value="brisbane">Brisbane</option>
@@ -33,7 +33,7 @@
                     </div>
 
                     <div>
-                        <label for="to">To</label><br>
+                        <label for="to">Destination</label><br>
                         <select name="to" id="to" class="selectPassenger">
                             <option value="default">Select</option>
                             <option value="brisbane">Brisbane</option>
@@ -59,15 +59,15 @@
                     
                 </form>
                 <hr>
-                <div class="receipt-container">
+                <div class="receipt-container hidden" id="receipt-container">
                     
                     <h1>Receipt</h1>
-                    <p><strong>Date:</strong><span>17/01/2026</span></p>
-                    <p><strong>Time:</strong><span>10:25:32</span></p>
-                    <p><strong>Name</strong><span>James Bumanlag</span></p>
-                    <p><strong>Passenger Type:</strong><span>Adult</span></p>
-                    <p><strong>From:</strong><span>Brisbane</span></p> 
-                    <p><strong>To:</strong><span>Sydney</span></p>
+                    <p id="date"><strong>Date:</strong><span>17/01/2026</span></p>
+                    <p id="time"><strong>Time:</strong><span>10:25:32</span></p>
+                    <p id="name"><strong>Name</strong><span>James Bumanlag</span></p>
+                    <p id="passenger"><strong>Passenger Type:</strong><span>Adult</span></p>
+                    <p id="from"><strong>From:</strong><span>Brisbane</span></p> 
+                    <p id="to"><strong>To:</strong><span>Sydney</span></p>
 
                     <p class="ticketPriceDisplay"><strong>Ticket Price:</strong> <span id="showPrice">0</span></p>
                     <img src="images/barcode sample.jpg" alt="">
