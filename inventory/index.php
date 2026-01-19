@@ -3,12 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Inventory System</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="dashboard images/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header>
-        <h1>Material Inventory Dashboard</h1>
+        <div>
+            <img src="dashboard images/android-chrome-512x512.png" alt="">
+            <h1>Material Inventory Dashboard</h1>
+        </div>
         <button type="button" id="addItemButton" class="addItembutton">Add Item</button>
     </header>
 

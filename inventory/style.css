@@ -5,6 +5,7 @@
     text-decoration: none;
     font-family: sans-serif;
     list-style: none;
+    color: #0f5496;
 
 }
 
@@ -29,6 +30,16 @@ header {
 
 header h1{
     color: rgb(245, 243, 241);
+}
+
+header div{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+header div img{
+    width: 50px;
+    background-image: transparent;
 }
 
 header button{
