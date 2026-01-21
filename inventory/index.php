@@ -23,10 +23,23 @@
         </ul>
     </nav>
     <section class= "displayStatus-container max-width">
-        <h2>Total Items</h2>
-        <h2>Low Stock Alerts</h2>
-        <h2>Out of Stock</h2>
-        <h2>Total Value</h2>
+        <div class="totalItems-container">
+
+            <h2>Total Items</h2>
+            <p class="totalItems">52</p>
+        </div>
+        <div class="lowStockAlerts-container">
+            <h2>Low Stock Alerts</h2>
+            <p class="lowStockAlerts">3</p>
+        </div>
+        <div class="outOfStock-container">
+            <h2>Out of Stock</h2>
+            <p class="outOfStock">2</p>
+        </div>
+        <div class="totalValue-container">
+            <h2>Total Value</h2>
+            <p class="totalValue">2,500</p>
+        </div>
     </section>
 
     <main class="max-width">
