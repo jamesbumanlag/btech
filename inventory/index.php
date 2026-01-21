@@ -24,7 +24,7 @@
     </nav>
     <section class= "displayStatus-container max-width">
         <div class="totalItems-container">
-
+            <img src="dashboard images/file.png" alt="">
             <h2>Total Items</h2>
             <p class="totalItems">52</p>
         </div>

@@ -87,6 +87,19 @@ nav ul{
     background-color: white;
 }
 
+
+/* this can be applied to all div in display status container */
+.totalItems-container {
+    display: flex;
+    gap: 5px;
+    position: relative;
+    
+}
+
+.totalItems-container img{
+    width: 40px;
+    height: 40px;
+}
 .displayStatus-container .lowStockAlerts-container .lowStockAlerts{
     color: rgb(238, 143, 34);
 }
@@ -96,12 +109,23 @@ nav ul{
     color: rgb(233, 10, 10);
 }
 
+.displayStatus-container .totalValue-container .totalValue{
+    color: green;
+}
 
 .displayStatus-container div p{
-    text-align: center;
-    margin-top: 70px;
+    text-align: left;
+    margin-top: 80px;
     font-size: 4rem;
+    
 }
+
+.displayStatus-container .totalItems{
+    position: absolute;
+    
+    
+}
+
 
 main {
     margin: 20px 0;
