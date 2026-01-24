@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+form{
+    border: 1px solid grey;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    padding: 30px 20px;
+    margin-top: 150px;
+    border-radius: 15px;
+   
+}
+
+form button{
+    margin-top: 20px;
+    height: 30px;
+}
+
+form :nth-child(3){
+    margin-top: 20px;
+}
+
+form p{
+    margin-bottom: 5px;
+}

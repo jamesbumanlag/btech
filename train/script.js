@@ -42,7 +42,7 @@ document.getElementById("goButton").addEventListener("click", () => {
         
     document.querySelector("#name span").innerText = name;
     document.querySelector("#from span").innerText = from;
-    document.querySelector("#to span").innerText = destination;
+    document.querySelector("#to span").innerText = to;
     
     const today = new Date();
     

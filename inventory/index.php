@@ -19,7 +19,7 @@
     <nav class="max-width">
         <ul>
             <li>Home > Inventory > Dashboard</li>
-            <li><a href="#">Logout</a></li>
+            <li><a href="login.php">Logout</a></li>
         </ul>
     </nav>
     <section class= "displayStatus-container max-width">
