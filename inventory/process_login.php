@@ -5,13 +5,41 @@ include 'db_error_handling.php';
 $username = strtolower($_POST['username']);
 $password = strtolower($_POST['password']);
 
-if ($username == 'admin' && $password == 'password'){
-    header("Location: index.php");
+$result = $conn->query("SELECT * FROM users WHERE username = '$username'");
+
+if ($result->num_rows == 0){
+    echo "Incorrect username and password";
     exit();
-} else {
-    echo "Invalid credentials";
-    
+} 
+
+// verify that the password entered matches the user associated with the username
+
+$data = $result->fetch_all(MYSQLI_ASSOC);
+
+// echo "<pre>";
+// var_dump($data);
+// echo "</pre>";
+
+
+$passwordInDatabase = $data[0]['password'];
+
+if ($passwordInDatabase !== $password) {
+    echo "Incorrect username and password";
+    exit();
 }
+
+
+
+// assume that the username and password are correct
+
+
+// if ($username == 'admin' && $password == 'password'){
+//     header("Location: index.php");
+//     exit();
+// } else {
+//     echo "Invalid credentials";
+    
+// }
 
 
 // username:

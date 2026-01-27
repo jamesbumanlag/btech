@@ -6,26 +6,28 @@ document.getElementById('submitButton').addEventListener("click", (e)=>{
 
     if (username === ''){
         alert('Enter username');
-        return;
+        exit();
     };
 
     if (username.length <= 4 || username.length > 20){
         alert('Invalid Username Input');
-        return;
+        exit();
     };
 
     if (password === ''){
         alert('Enter Password');
-        return;
+        exit();
     };
 
-    if (password.length <= 6 || password.length > 20){
+    if (password.length <= 4 || password.length > 20){
         alert('Invalid Password Input');
-        return;
-    };
+        exit();
+    } else{
+        window.location.replace("index.php");
+    }
 
 
-    window.location.replace("process_login.php");
+    
     
 
 
