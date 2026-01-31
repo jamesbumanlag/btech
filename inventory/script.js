@@ -1,33 +1,61 @@
-document.getElementById('submitButton').addEventListener("click", (e)=>{
-    
-    
+function validateCredentials(){
     const username = document.getElementById('username').value;
     const password = document.getElementById('password').value;
 
     if (username === ''){
-        alert('Enter username');
-        exit();
+        alert('Username cannot be empty');
+        return false;
     };
 
     if (username.length <= 4 || username.length > 20){
         alert('Invalid Username Input');
-        exit();
+        return false;
     };
 
     if (password === ''){
         alert('Enter Password');
-        exit();
+        return false;
     };
 
     if (password.length <= 4 || password.length > 20){
         alert('Invalid Password Input');
-        exit();
-    } else{
-        window.location.replace("index.php");
+        return false;
     }
 
+    return true;
+
+}
+
+
+
+
+
+
+
+
+
+document.getElementById('submitButton').addEventListener("click", (e)=>{
+    e.preventDefault();
+    
+    if (!validateCredentials()) return;
+
+    window.location.replace("login.php");
+
+
+});    
+
+
+document.getElementById('addButton').addEventListener('click', (e)=>{
+    e.preventDefault();
+
+    if (!validateCredentials()) return;
 
     
+
+
+
+});
+
     
 
 
@@ -53,4 +81,3 @@ document.getElementById('submitButton').addEventListener("click", (e)=>{
     // }
 
 
-});
