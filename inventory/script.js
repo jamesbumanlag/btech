@@ -1,6 +1,6 @@
 function validateCredentials(){
-    const username = document.getElementById('username').value;
-    const password = document.getElementById('password').value;
+    const username = document.getElementById('username').value.trim();
+    const password = document.getElementById('password').value.trim();
 
     if (username === ''){
         alert('Username cannot be empty');
@@ -26,58 +26,26 @@ function validateCredentials(){
 
 }
 
+const submitButton = document.getElementById('submitButton');
 
+if (submitButton){
+    submitButton.addEventListener('click', (e)=>{
+        e.preventDefault();
+        if (!validateCredentials()) return;
+        window.location.replace('login.php');
+        
+    })
+}
 
+const addUserForm = document.getElementById('addUserForm');
 
-
-
-
-
-
-document.getElementById('submitButton').addEventListener("click", (e)=>{
-    e.preventDefault();
-    
-    if (!validateCredentials()) return;
-
-    window.location.replace("login.php");
-
-
-});    
-
-
-document.getElementById('addButton').addEventListener('click', (e)=>{
-    e.preventDefault();
-
-    if (!validateCredentials()) return;
-
-    
-
-
-
-});
-
-    
-
-
-
-    // if (username === ''){
-    //     alert('Enter username');
-    //     return;
-
-    // } else if (username.length >= 6 && username.length <= 20){
-    //     if (password === ''){
-    //         alert('Enter Password');
-    //         return;
-    //     } else if (password.length >= 6 && password.length <= 14){
-    //         window.location.href = "login.php";
-    //     } else{
-    //         alert("Invalid Password Input");
-    //         return;
-    //     }
-
-    // } else {
-    //     alert("Invalid Username Input");
-    //     return;
-    // }
+if (addUserForm){
+    addUserForm.addEventListener('submit', (e)=>{
+        e.preventDefault();
+        if (!validateCredentials()) return;
+        e.target.submit();
+        
+    })
+}
 
 
