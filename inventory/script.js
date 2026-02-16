@@ -26,13 +26,13 @@ function validateCredentials(){
 
 }
 
-const submitButton = document.getElementById('submitButton');
+const loginForm = document.getElementById('loginForm');
 
-if (submitButton){
-    submitButton.addEventListener('click', (e)=>{
+if (loginForm){
+    loginForm.addEventListener('submit', (e)=>{
         e.preventDefault();
         if (!validateCredentials()) return;
-        window.location.replace('login.php');
+        e.target.submit();
         
     })
 }
@@ -49,3 +49,6 @@ if (addUserForm){
 }
 
 
+function closeError(){
+    document.getElementById("error-box").style.display = "none";
+}

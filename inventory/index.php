@@ -1,3 +1,13 @@
+<?php
+
+    session_start();
+
+    include 'secure.php';
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,7 +29,19 @@
     <nav class="max-width">
         <ul>
             <li>Home > Inventory > Dashboard</li>
-            <li><a href="login.php">Logout</a></li>
+            <li>
+                <?php 
+
+                    $username = ucfirst($_SESSION['username']) ;
+                    echo "Welcome <strong>" .  $username . "</strong>";
+                    
+                    ?>
+            
+            
+            
+            
+            </li>
+            <li><a href="logout.php">Logout</a></li>
         </ul>
     </nav>
     <section class= "displayStatus-container max-width">

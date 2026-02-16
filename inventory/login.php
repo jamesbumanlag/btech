@@ -1,3 +1,40 @@
+<?php
+session_start();
+require 'db_error_handling.php';
+
+$error = '';
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+
+    $username = trim($_POST['username'] ?? '');
+    $password = $_POST['password'] ?? '';
+
+    if ($username === '' || $password === '') {
+        $error = "Username and password are required.";
+    } else {
+
+        $stmt = $conn->prepare("SELECT * FROM users WHERE username = ?");
+        $stmt->bind_param("s", $username);
+        $stmt->execute();
+
+        $result = $stmt->get_result();
+        $user = $result->fetch_assoc();
+
+        if (!$user || !password_verify($password, $user['password'])) {
+            $error = "Incorrect username or password.";
+        } else {
+            $_SESSION['user_id'] = $user['user_id'];
+            $_SESSION['username'] = $user['username'];
+
+            header("Location: index.php");
+            exit;
+        }
+    }
+}
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +45,19 @@
 </head>
 <body>
 
-    <form action="process_login.php" method="post">
+    <?php if ($error): ?>
+        <div class="error-box" id="error-box">
+            <p><?=htmlspecialchars($error); ?></p>
+            <button type="button" class="close-btn" onclick="closeError()">x</button>
+        </div>
+        
+    <?php endif; ?>
+
+    <!-- <div class="error" id="error">
+        <p>Invalid username and password</p>
+    </div> -->
+
+    <form  method="post" id="loginForm">
         <p>Username:</p>
         <input type="text" id="username" name="username">
      
@@ -16,6 +65,8 @@
         <input type="password" id="password" name="password">
         
         <button type="submit" id="submitButton">Login</button>
+        <br>
+        <a href="add.php" style="text-align: center;">Sign Up</a>
     </form>
     
 <script src="script.js"></script>

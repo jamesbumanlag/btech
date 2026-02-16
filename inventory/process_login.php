@@ -1,94 +1,49 @@
 <?php
 
+session_start();
+
 include 'db_error_handling.php';
 
-$username = strtolower($_POST['username']);
-$password = strtolower($_POST['password']);
+$error = '';
+
+$username = trim($_POST['username'] ?? '');
+$password = ($_POST['password'] ?? '');
+
+
+if ($username === '' || $password === ''){
+
+    $error = "Invalid username and password 1";
+
+    // echo "Invalid username and password 1";
+    // echo "<br><a href='login.php'>Back to login</a>";
+}
 
 $stmt = $conn->prepare("SELECT * FROM users WHERE username=?");
 $stmt->bind_param('s', $username);
-
-// if ($result->num_rows == 0){
-//     echo "Incorrect username and password";
-//     exit();
-// } 
 
 // verify that the password entered matches the user associated with the username
 $stmt->execute();
 
 $result = $stmt->get_result();
 
-$data = $result->fetch_assoc();
 
 
+$user = $result->fetch_assoc();
 
-if (!$data) {
-    echo "Incorrect username and password";
-    exit();
+if (!$user || !password_verify($password, $user['password'])){
+    $error = "Invalid username and password 2";
+    // echo "Incorrect username or password 2";
+    // echo "<br><a href='login.php'>Back to login</a>";
+    exit;
 }
 
-
-// echo "<pre>";
-// echo $data[0]['username'];
-// echo '<br>';
-// echo $data[1]['username'];
-// echo "</pre>";
-// $count = count($data);
-// echo 'Username </br>';
-// for ($i = 0; $i < $count; $i++){
-//     echo $data[$i]['username'] . "<br>";
-// }
+    $_SESSION['username'] = $username;
+    $_SESSION['password'] = $password;
 
 
-// $passwordInDatabase = $data[0]['password'];
+    header("Location: index.php");
+    echo "<br><a href='login.php'>Logout</a>";
 
-// if ($passwordInDatabase !== $password) {
-//     echo "Incorrect username and password";
-//     exit();
-// }
-
-
-
-// assume that the username and password are correct
-
-
-// if ($username == 'admin' && $password == 'password'){
-//     header("Location: index.php");
-//     exit();
-// } else {
-//     echo "Invalid credentials";
-    
-// }
-
-
-// username:
-// var_dump($username);
-// echo'<br>';
-// password:
-// var_dump($password);
-
-
-// $conn = new mysqli('localhost', 'roots', '', 'login_inventory');
-
-// echo "<pre>";
-// var_dump($conn);
-// echo "</pre>";
-
-// echo "<pre>";
-// var_dump($conn->connect_error);
-// echo "</pre>";
-
-// echo "<pre>";
-// var_dump($conn->connect_errno);
-// echo "</pre>";
-
-
-
-// if ($conn->connect_errno !== 0) {
-//     die("Database connection failed ({$conn->connect_errno}): {$conn->connect_error}");
-// }
-
-// echo "Database connected successfully";
 
 
 ?>
