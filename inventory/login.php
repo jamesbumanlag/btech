@@ -58,13 +58,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </div> -->
 
     <form  method="post" id="loginForm">
-        <p>Username:</p>
-        <input type="text" id="username" name="username">
-     
-        <p>Password:</p>
-        <input type="password" id="password" name="password">
+        <h1>Material Inventory Dashboard</h1>
+
         
-        <button type="submit" id="submitButton">Login</button>
+        <input type="text" id="username" name="username" placeholder="Username">
+     
+        
+        <input type="password" id="password" name="password" placeholder="Password">
+        
+        <button type="submit" id="submitButton" class="loginBtn">Login</button>
         <br>
         <a href="add.php" style="text-align: center;">Sign Up</a>
     </form>
