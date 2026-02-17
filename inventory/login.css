@@ -7,7 +7,7 @@
 }
 
 body{
-    background: linear-gradient(to right, #4e73df, #c1e9da);
+    background: linear-gradient(to right, #4e73df, #a4c9eb);
 }
 
 
@@ -91,7 +91,14 @@ form button{
 form > h1{
     margin: 20px auto 10px auto;
     font-size: 1.2rem;
-    color:  rgb(65, 63, 63);
+    color:  rgb(85, 84, 84);
+}
+
+
+form img{
+    width: 100px;
+    mix-blend-mode: multiply;
+    margin: 0 auto;
 }
 
 
@@ -101,4 +108,38 @@ form > h1{
     background: rgb(100, 100, 231);
     border-radius: 5px;
     height: 2.5rem;
+    
+}
+
+
+.signUp{
+    text-align: center;
+    font-size: 0.8rem;
+    margin-top: 20px;
+    color:  rgb(85, 84, 84);
+}
+
+p span a{
+    
+    margin-left: 10px;
+    text-decoration: none;
+    color: rgb(62, 62, 226);
+    
+}
+
+p span a:hover{
+    color: rgb(158, 158, 229);
+}
+
+
+.resetPassword{
+    margin-top: 15px;
+    font-size: 0.8rem;
+    text-align: right;
+    text-decoration: none;
+    color:  rgb(87, 97, 240);
+}
+
+.resetPassword:hover{
+    color: rgb(150, 150, 240);
 }

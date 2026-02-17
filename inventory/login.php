@@ -58,6 +58,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </div> -->
 
     <form  method="post" id="loginForm">
+
+        <img src="dashboard images/login_icon.png" alt="">
         <h1>Material Inventory Dashboard</h1>
 
         
@@ -65,10 +67,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
      
         
         <input type="password" id="password" name="password" placeholder="Password">
-        
+        <a href="forgot.php" class="resetPassword">Forgot password?</a>
         <button type="submit" id="submitButton" class="loginBtn">Login</button>
         <br>
-        <a href="add.php" style="text-align: center;">Sign Up</a>
+        <p class="signUp">Don't have an account?<span><a href="add.php" style="text-align: center;">Sign Up</a></span></p>
+
+        
     </form>
     
 <script src="script.js"></script>
