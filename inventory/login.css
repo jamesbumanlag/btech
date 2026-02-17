@@ -35,14 +35,35 @@ form{
    
 }
 
-form input{
+form .input-group{
+    position: relative;
+    margin-bottom: 15px;
     margin-top: 20px;
+
+}
+
+form .input-group input{
     height: 2.5rem;
     border-radius: 5px;
     border: 1.2px solid rgb(182, 180, 180); 
-    padding-inline-start: 5px;
+    padding: 10px 10px 10px 45px;
     background-color: white(255, 255, 255);
+    width: 100%;
+    font-size: 1rem;
     
+}
+
+form .input-group .icon{
+    position:absolute;
+    left:15px;
+    top:50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+form .input-group .icon img{
+    width: 25px;
+    height: 25px;
 }
 
 form button{

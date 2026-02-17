@@ -62,11 +62,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <img src="dashboard images/login_icon.png" alt="">
         <h1>Material Inventory Dashboard</h1>
 
+        <div class="input-group">
+            <span class="icon"><img src="dashboard images/user.png" alt=""></span>
+            <input type="text" id="username" name="username" placeholder="Username">
+        </div>
         
-        <input type="text" id="username" name="username" placeholder="Username">
+        <div class="input-group">
+            <span class="icon"><img src="dashboard images/password_icon.png" alt=""></span>
+            <input type="password" id="password" name="password" placeholder="Password">
+        </div>
      
         
-        <input type="password" id="password" name="password" placeholder="Password">
+        
         <a href="forgot.php" class="resetPassword">Forgot password?</a>
         <button type="submit" id="submitButton" class="loginBtn">Login</button>
         <br>
