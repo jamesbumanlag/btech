@@ -50,7 +50,7 @@
 <body>
 
     
-    <form  method="post" id="loginForm">
+    <form  method="" id="loginForm">
 
         <img class="login-icon" src="dashboard images/add_user.png" alt="">
         <h1>Add User</h1>
@@ -87,10 +87,12 @@
      
      
         
+        <div class="button-group">
+            <button type="button" id="cancelButton" class="cancelBtn loginBtn" onclick="window.location.href='login.php'">Cancel</button>
+            <button type="submit" id="submitButton" class="loginBtn">Sign Up</button>
+        </div>
         
         
-        <button type="submit" id="submitButton" class="loginBtn">Submit</button>
-        <br>
         
         
     </form>

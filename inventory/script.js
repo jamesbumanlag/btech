@@ -52,3 +52,4 @@ if (addUserForm){
 function closeError(){
     document.getElementById("error-box").style.display = "none";
 }
+

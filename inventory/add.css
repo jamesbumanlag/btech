@@ -67,11 +67,34 @@ form .input-group .icon img{
     height: 25px;
 }
 
+
+form .button-group{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
 form button{
     margin-top: 20px;
     height: 30px;
-   
+    padding: 5px 10px;
+    
 }
+
+
+form .button-group .cancelBtn{
+    color: rgb(116, 114, 114);
+    background-color: white;
+}
+
+
+
+form .button-group .cancelBtn:hover{
+    color: rgb(245, 245, 245);
+    background-color: rgb(182, 175, 175);
+}
+
+
 
 
 .error{
@@ -137,6 +160,11 @@ form .login-icon{
     height: 2.5rem;
     font-size: 1.2rem;
     
+}
+
+.loginBtn:hover{
+    color: rgb(100, 100, 231);
+    background: #ffffff;
 }
 
 
