@@ -21,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $user = $result->fetch_assoc();
 
         if (!$user || !password_verify($password, $user['password'])) {
-            $error = "Incorrect username or password.";
+            $error = "Invalid username or password.";
         } else {
             $_SESSION['user_id'] = $user['user_id'];
             $_SESSION['username'] = $user['username'];
@@ -42,6 +42,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="login.css">
+    <link rel="shortcut icon" href="dashboard images/favicon.ico" type="image/x-icon">
 </head>
 <body>
 
@@ -59,7 +60,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     <form  method="post" id="loginForm">
 
-        <img src="dashboard images/login_icon.png" alt="">
+        <img class="login-icon" src="dashboard images/login_icon.png" alt="">
         <h1>Material Inventory Dashboard</h1>
 
         <div class="input-group">
@@ -75,7 +76,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         
         
         <a href="forgot.php" class="resetPassword">Forgot password?</a>
-        <button type="submit" id="submitButton" class="loginBtn">Login</button>
+        <button type="submit" id="submitButton" class="loginBtn">Log In</button>
         <br>
         <p class="signUp">Don't have an account?<span><a href="add.php" style="text-align: center;">Sign Up</a></span></p>
 

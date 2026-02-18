@@ -10,7 +10,6 @@ body{
     background: linear-gradient(to right, #4e73df, #a4c9eb);
 }
 
-
 form{
     border: none;
     max-width: 500px;
@@ -46,7 +45,7 @@ form .input-group input{
     height: 2.5rem;
     border-radius: 5px;
     border: 1.2px solid rgb(182, 180, 180); 
-    padding: 10px 10px 10px 50px;
+    padding: 10px 10px 10px 10px;
     background-color: white(255, 255, 255);
     width: 100%;
     font-size: 1rem;
@@ -61,6 +60,7 @@ form .input-group .icon{
     transform: translateY(-50%);
     pointer-events: none;
 }
+
 
 form .input-group .icon img{
     width: 25px;

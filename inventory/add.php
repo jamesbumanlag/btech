@@ -1,5 +1,6 @@
 <?php
 
+    session_start();
     include 'secure.php';
 
     require 'db_error_handling.php';
@@ -31,12 +32,7 @@
                 echo "<a href='add.php'>Back</a>";
                 exit;
             }
-        
-
         }
-
-        
-
      }
     
 
@@ -48,20 +44,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add User</title>
+    <link rel="stylesheet" href="add.css">
 </head>
 <body>
 
-    <h1>Add New User</h1>
-    <form method="post" id="addUserForm" autocomplete="off">
-        <label for="username">Username</label>
-        <input type="text" name="username" id="username" autocomplete="new-username" >
-        <br>
-        <label for="password">Password</label>
-        <input type="password" id="password" name="password" autocomplete="new-password">
-        <br>
-        <button type="submit" name="addButton" id="addButton">Add</button>
-        <button type="button" onclick="window.location.href='login.php'"> Login </button>
+    
+    <form  method="post" id="loginForm">
 
+        <img class="login-icon" src="dashboard images/add_user.png" alt="">
+        <h1>Add User</h1>
+
+        <div class="input-group">
+            <label for="username">Username</label>
+           
+            <input type="text" id="username" name="username" placeholder="Username">
+        </div>
+        
+        <div class="input-group">
+            <label for="password">Password</label>
+            
+            <input type="password" id="password" name="password" placeholder="Password">
+        </div>
+     
+        
+        
+        
+        <button type="submit" id="submitButton" class="loginBtn">Submit</button>
+        <br>
+        
+        
     </form>
     <script src="script.js"></script>
 </body>
