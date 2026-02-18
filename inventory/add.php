@@ -45,6 +45,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add User</title>
     <link rel="stylesheet" href="add.css">
+    <link rel="shortcut icon" href="dashboard images/favicon.ico" type="image/x-icon">
 </head>
 <body>
 
@@ -55,16 +56,35 @@
         <h1>Add User</h1>
 
         <div class="input-group">
-            <label for="username">Username</label>
-           
+            <!-- <label for="username">Username</label> -->
             <input type="text" id="username" name="username" placeholder="Username">
+        </div>
+
+         <div class="input-group">
+            <!-- <label for="firstname">Firstname</label> -->
+            <input type="text" id="firstname" name="firstname" placeholder="Firstname">
+        </div>
+
+         <div class="input-group">
+            <!-- <label for="lastname">Lastname</label> -->
+            <input type="text" id="lastname" name="lastname" placeholder="Lastname">
+        </div>
+
+         <div class="input-group">
+            <!-- <label for="email">Email</label> -->
+            <input type="text" id="email" name="email" placeholder="Email">
         </div>
         
         <div class="input-group">
-            <label for="password">Password</label>
-            
+            <!-- <label for="password">Password</label> -->
             <input type="password" id="password" name="password" placeholder="Password">
         </div>
+
+        <div class="input-group">
+            <!-- <label for="confirm-password">Confirm-Password</label> -->
+            <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm-password">
+        </div>
+     
      
         
         
