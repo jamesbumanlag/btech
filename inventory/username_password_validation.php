@@ -36,18 +36,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
         }
 
         
-        if (strlen($username) < 4 || strlen($username) > 20 ){
-            $errors[]= "Username must be 4-20 characters";
-           
-        };
-
         if (!preg_match('/^[a-zA-Z0-9]{4,20}$/', $username)){
-            $errors[]= 'Invalid username';
+            $errors[]= 'Username must be 4-20 characters and contain only letters and numbers';
             
         }
 
-        if (strlen($password) < 4 || strlen($password) > 20 ){
-            $errors[]= "Password must be 4-20 characters";
+        if (strlen($password) < 6){
+            $errors[]= "Password must be atleast 6 characters";
            
         }
         
