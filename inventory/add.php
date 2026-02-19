@@ -14,9 +14,9 @@
         $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
 
         $stmt = $conn->prepare
-            ("INSERT INTO users (username, password) VALUES (?, ?)");
+            ("INSERT INTO users (username, firstname, lastname, email, password) VALUES (?, ?, ?, ?)");
         
-        $stmt->bind_param('ss', $username, $hashedPassword);
+        $stmt->bind_param('sssss', $username, $hashedPassword);
 
         try {
             $stmt->execute();
@@ -57,32 +57,32 @@
 
         <div class="input-group">
             <!-- <label for="username">Username</label> -->
-            <input type="text" id="username" name="username" placeholder="Username">
+            <input type="text" id="username" name="username" placeholder="Username" required>
         </div>
 
          <div class="input-group">
             <!-- <label for="firstname">Firstname</label> -->
-            <input type="text" id="firstname" name="firstname" placeholder="Firstname">
+            <input type="text" id="firstname" name="firstname" placeholder="Firstname" required>
         </div>
 
          <div class="input-group">
             <!-- <label for="lastname">Lastname</label> -->
-            <input type="text" id="lastname" name="lastname" placeholder="Lastname">
+            <input type="text" id="lastname" name="lastname" placeholder="Lastname" required>
         </div>
 
          <div class="input-group">
             <!-- <label for="email">Email</label> -->
-            <input type="text" id="email" name="email" placeholder="Email">
+            <input type="text" id="email" name="email" placeholder="Email" required>
         </div>
         
         <div class="input-group">
             <!-- <label for="password">Password</label> -->
-            <input type="password" id="password" name="password" placeholder="Password">
+            <input type="password" id="password" name="password" placeholder="Password" required>
         </div>
 
         <div class="input-group">
             <!-- <label for="confirm-password">Confirm-Password</label> -->
-            <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm-password">
+            <input type="password" id="confirmPassword" name="confirm-password" placeholder="Confirm-password" required>
         </div>
      
      
