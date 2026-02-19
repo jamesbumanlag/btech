@@ -4,7 +4,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
 
         // get the user input
         $username = trim($_POST['username']);
+        $firstname = trim($_POST['firstname']);
+        $lastname = trim($_POST['lastname']);
+        $email = trim($_POST['email']);
         $password = $_POST['password'];
+        $confirmPassword = $_POST['confirmPassword'];
 
         // validate user input
         if ($username == '' || $password == ''){
@@ -30,6 +34,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
             echo "<br><a href='add.php'>Back</a>";
             exit();
         }
+
+        if ($password !== )
 
 
 
