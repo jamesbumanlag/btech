@@ -14,9 +14,9 @@
         $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
 
         $stmt = $conn->prepare
-            ("INSERT INTO users (username, firstname, lastname, email, password) VALUES (?, ?, ?, ?)");
+            ("INSERT INTO users (username, firstname, lastname, email, password) VALUES (?, ?, ?, ?, ?)");
         
-        $stmt->bind_param('sssss', $username, $hashedPassword);
+        $stmt->bind_param('sssss', $username, $firstname, $lastname, $email, $hashedPassword);
 
         try {
             $stmt->execute();
@@ -50,7 +50,7 @@
 <body>
 
     
-    <form  method="" id="loginForm">
+    <form  method="post" id="loginForm">
 
         <img class="login-icon" src="dashboard images/add_user.png" alt="">
         <h1>Add User</h1>
@@ -82,7 +82,7 @@
 
         <div class="input-group">
             <!-- <label for="confirm-password">Confirm-Password</label> -->
-            <input type="password" id="confirmPassword" name="confirm-password" placeholder="Confirm-password" required>
+            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm-password" required>
         </div>
      
      

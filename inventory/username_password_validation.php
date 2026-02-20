@@ -44,7 +44,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
         if (strlen($password) < 6){
             $errors[]= "Password must be atleast 6 characters";
            
+        } elseif ($password !== $confirmPassword){
+            $errors[] = "Password mismatch";
         }
+
         
         if (!empty($errors)){
             foreach ($errors as $error) {
