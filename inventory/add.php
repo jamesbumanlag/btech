@@ -20,8 +20,8 @@
 
         try {
             $stmt->execute();
-            header("Location: add.php?success=1");
-            echo "Added succesfully";
+            header("Location: login.php?success=1");
+            exit();
         } catch (mysqli_sql_exception $e) {
             if ($e->getCode()  == 1062 ){
                 echo "Username already exists";
@@ -48,41 +48,44 @@
     <link rel="shortcut icon" href="dashboard images/favicon.ico" type="image/x-icon">
 </head>
 <body>
-
+    <?php
+        if (isset($_GET['success'])) : ?>
+        <script> alert("User added successfully!");</script>
+    <?php endif; ?>
     
-    <form  method="post" id="loginForm">
+    <form  method="post" id="loginForm" >
 
         <img class="login-icon" src="dashboard images/add_user.png" alt="">
         <h1>Add User</h1>
 
         <div class="input-group">
             <!-- <label for="username">Username</label> -->
-            <input type="text" id="username" name="username" placeholder="Username" required>
+            <input type="text" id="username" name="username" placeholder="Username" value="" required>
         </div>
 
          <div class="input-group">
             <!-- <label for="firstname">Firstname</label> -->
-            <input type="text" id="firstname" name="firstname" placeholder="Firstname" required>
+            <input type="text" id="firstname" name="firstname" placeholder="Firstname" value="" required>
         </div>
 
          <div class="input-group">
             <!-- <label for="lastname">Lastname</label> -->
-            <input type="text" id="lastname" name="lastname" placeholder="Lastname" required>
+            <input type="text" id="lastname" name="lastname" placeholder="Lastname" value="" required>
         </div>
 
          <div class="input-group">
             <!-- <label for="email">Email</label> -->
-            <input type="text" id="email" name="email" placeholder="Email" required>
+            <input type="text" id="email" name="email" placeholder="Email" value="" required>
         </div>
         
         <div class="input-group">
             <!-- <label for="password">Password</label> -->
-            <input type="password" id="password" name="password" placeholder="Password" required>
+            <input type="password" id="password" name="password" placeholder="Password" value="" required>
         </div>
 
         <div class="input-group">
             <!-- <label for="confirm-password">Confirm-Password</label> -->
-            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm-password" required>
+            <input type="password" id="confirmPassword" name="confirmPassword" value="" placeholder="Confirm-password" required>
         </div>
      
      

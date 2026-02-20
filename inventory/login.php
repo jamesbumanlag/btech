@@ -53,6 +53,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </div>
         
     <?php endif; ?>
+    
+    <?php
+        if (isset($_GET['success'])) : ?>
+        <script> alert("User added successfully!");</script>
+    <?php endif; ?>
+    
+
 
     <!-- <div class="error" id="error">
         <p>Invalid username and password</p>

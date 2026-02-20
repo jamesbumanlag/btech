@@ -10,14 +10,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
         $password = trim($_POST['password']) ?? '';
         $confirmPassword = trim($_POST['confirmPassword']) ?? '';
 
-        // validate user input
-        // if ($username == '' || $password == ''){
-        //     echo "Username and password cannot be empty";
-        //     echo "<br><a href='add.php'>Back</a>";
-        //     exit();
-        // };
-
-
+      
         $errors = [];
 
         if (empty($firstname)){
@@ -48,7 +41,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
             $errors[] = "Password mismatch";
         }
 
-        
+
         if (!empty($errors)){
             foreach ($errors as $error) {
                 echo $error . "<br>";
