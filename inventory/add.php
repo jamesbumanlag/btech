@@ -48,11 +48,13 @@
     <link rel="shortcut icon" href="dashboard images/favicon.ico" type="image/x-icon">
 </head>
 <body>
+    
     <?php
         if (isset($_GET['success'])) : ?>
         <script> alert("User added successfully!");</script>
     <?php endif; ?>
     
+      
     <form  method="post" id="loginForm" >
 
         <img class="login-icon" src="dashboard images/add_user.png" alt="">
