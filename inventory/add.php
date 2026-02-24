@@ -43,7 +43,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add User</title>
+    <title>Sign-up</title>
     <link rel="stylesheet" href="add.css">
     <link rel="shortcut icon" href="dashboard images/favicon.ico" type="image/x-icon">
 </head>
@@ -58,11 +58,11 @@
     <form  method="post" id="loginForm" >
 
         <img class="login-icon" src="dashboard images/add_user.png" alt="">
-        <h1>Add User</h1>
+        <h1>Sign-Up here</h1>
 
         <div class="input-group">
             <!-- <label for="username">Username</label> -->
-            <input type="text" id="username" name="username" placeholder="Username" value="" required>
+            <input type="text" id="username" name="username" placeholder="Username" value="" required autocomplete="off">
         </div>
 
          <div class="input-group">
@@ -82,12 +82,12 @@
         
         <div class="input-group">
             <!-- <label for="password">Password</label> -->
-            <input type="password" id="password" name="password" placeholder="Password" value="" required>
+            <input type="password" id="password" name="password" autocomplete="new-password" placeholder="Password" value="" required>
         </div>
 
         <div class="input-group">
             <!-- <label for="confirm-password">Confirm-Password</label> -->
-            <input type="password" id="confirmPassword" name="confirmPassword" value="" placeholder="Confirm-password" required>
+            <input type="password" id="confirmPassword" autocomplete="new-password" name="confirmPassword" value="" placeholder="Confirm-password" required>
         </div>
      
      

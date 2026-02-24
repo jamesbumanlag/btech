@@ -68,12 +68,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         <div class="input-group">
             <span class="icon"><img src="dashboard images/user.png" alt=""></span>
-            <input type="text" id="username" name="username" placeholder="Username">
+            <input type="text" id="username" name="username" placeholder="Username" autocomplete="off">
         </div>
         
         <div class="input-group">
             <span class="icon"><img src="dashboard images/password_icon.png" alt=""></span>
-            <input type="password" id="password" name="password" placeholder="Password">
+            <input type="password" id="password" name="password" autocomplete="new-password" placeholder="Password">
         </div>
      
         
