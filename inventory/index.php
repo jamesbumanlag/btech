@@ -39,7 +39,6 @@
             
             
             
-            
             </li>
             <li><a href="logout.php">Logout</a></li>
         </ul>
@@ -76,6 +75,13 @@
 
         <section class="section2-container">
             <h3>Vehicle Inventory</h3>
+            <div class="material-container">
+                <h4>Materials</h4>
+                <h5>NTD</h5>
+                <h5>PCD</h5>
+                <h5>Internal Cable</h5>
+                <h5>External Cable</h5>
+            </div>
         </section>
 
         <section class="section3-container">
