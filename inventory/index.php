@@ -26,6 +26,52 @@
         <button type="button" id="addItemButton" class="addItembutton">Add Item</button>
     </header>
 
+    <div class="add-modal-container">
+        <div class="add-modal">
+            <h2>Add Item</h2>
+            <hr>
+            <ul>
+                <li><a href="#">Cable</a></li>
+                <li><a href="#">NTD</a></li>
+                <li><a href="#">PCD</a></li>
+            </ul>
+
+            <div class="cable-form">
+                <label for="cableType">Type</label>
+                <select id="cableType">
+                    <option value="select">Select</option>
+                    <option value="internal">Internal</option>
+                    <option value="external">External</option>
+                </select>
+                <label for="cableLengthInternal">Length</label>
+                <select id="cableLengthInternal">
+                    <option value="select">Select</option>
+                    <option value="5">5m</option>
+                    <option value="15">15m</option>
+                    <option value="20">20m</option>
+                    <option value="30">30m</option>
+                </select>
+
+                <label for="cableLengthExternal">Length</label>
+                <select id="cableLengthExternal">
+                    <option value="select">Select</option>
+                    <option value="40">40m</option>
+                    <option value="60">60m</option>
+                    <option value="80">80m</option>
+                    <option value="120">120m</option>
+                    <option value="160">160m</option>
+                    <option value="300">300m</option>
+                    <option value="500">500m</option>
+
+                </select>
+            </div>
+            
+        </div>
+    </div>
+
+
+
+
     <nav class="max-width">
         <ul>
             <li>Home > Inventory > Dashboard</li>
