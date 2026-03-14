@@ -53,3 +53,16 @@ function closeError(){
     document.getElementById("error-box").style.display = "none";
 }
 
+
+const addModalContainer = document.getElementById("add-modal-container");
+const addItemBtn = document.getElementById("addItemButton");
+const submitCloseBtn = document.getElementById("submit-close-btn");
+
+
+addItemBtn.addEventListener("click", ()=>{
+    addModalContainer.classList.add("show");
+});
+
+submitCloseBtn.addEventListener("click", () =>{
+    addModalContainer.classList.remove("show");
+});

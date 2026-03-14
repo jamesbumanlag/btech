@@ -23,18 +23,23 @@
             <img src="dashboard images/android-chrome-512x512.png" alt="">
             <h1>Material Inventory Dashboard</h1>
         </div>
-        <button type="button" id="addItemButton" class="addItembutton">Add Item</button>
+        <button type="button" id="addItemButton" class="addItemButton">Add Item</button>
     </header>
 
-    <div class="add-modal-container">
-        <div class="add-modal">
+<!-- Start of Add modal -->
+
+    <div class="add-modal-container" id="add-modal-container">
+        <div class="modal-container" id="modal-container">
             <h2>Add Item</h2>
             <hr>
-            <ul>
-                <li><a href="#">Cable</a></li>
-                <li><a href="#">NTD</a></li>
-                <li><a href="#">PCD</a></li>
-            </ul>
+            
+            <div class="add-menu">
+                <ul>
+                    <li><a href="#">Cable</a></li>
+                    <li><a href="#">NTD</a></li>
+                    <li><a href="#">PCD</a></li>
+                </ul>
+            </div>
 
             <div class="cable-form">
                 <label for="cableType">Type</label>
@@ -64,11 +69,17 @@
                     <option value="500">500m</option>
 
                 </select>
+
+                <div class="submit-add-btn-container">
+                    <button type="submit" class="submit-add-btn" id="submit-add-btn">Add</button>
+                    <button type="submit" class="submit-close-btn" id="submit-close-btn">Cancel</button>
+                </div>
             </div>
             
         </div>
     </div>
 
+<!-- End of Add modal -->
 
 
 

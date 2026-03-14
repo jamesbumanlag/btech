@@ -42,7 +42,7 @@ header div img{
     background-image: transparent;
 }
 
-header button{
+.addItemButton{
     padding: 10px 10px;
     border-radius: 10px;
     border:none;
@@ -53,12 +53,12 @@ header button{
     
 }
 
-header button:hover{
+.addItemButton:hover{
     background: #5ab7db;
     box-shadow: 0 6px 14px rgba(57, 114, 236, 0.35);
 }
 
-header button img{
+.addItemButton img{
     width: 10px;
 }
 
@@ -187,3 +187,58 @@ main .section3-container div{
 main .section3-container .teams-container{
     margin-top: 20px;
 }
+
+
+.add-modal-container{
+    width: 100vw;
+    height: 100vh;
+    background: rgba(128, 128, 128, 0.575);
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left:0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 999;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s ease;
+
+
+}
+
+.add-modal-container.show{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal-container{
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    justify-content: center;
+    background-color: white;
+    padding: 30px 50px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+   
+}
+
+
+.modal-container .add-menu ul{
+    display: flex;
+    gap: 20px;
+}
+
+.cable-form{
+    margin-top: 20px;
+    
+}
+
+.submit-add-btn-container{
+    margin-top: 20px;
+}
+
