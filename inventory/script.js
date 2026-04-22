@@ -69,3 +69,22 @@ submitCloseBtn.forEach(closeBtn => {
     });
     
 });
+
+const materialRadio = document.querySelectorAll('input[name="category"]');
+
+materialRadio.forEach(material => {
+    material.addEventListener('change', ()=>{
+        document.getElementById('cableForm-container').style.display = 'none';
+        document.getElementById('ntdForm-container').style.display = 'none';
+        document.getElementById('pcdForm-container').style.display = 'none';
+
+        if (material.value === 'cable') {
+            document.getElementById('cableForm-container').style.display = 'block';
+        } else if (material.value === 'ntd') {
+            document.getElementById('ntdForm-container').style.display = 'block';
+        } else if (material.value === 'pcd') {
+            document.getElementById('pcdForm-container').style.display = 'block';
+        }
+
+    })
+})

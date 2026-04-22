@@ -35,7 +35,7 @@
             
             <div class="add-menu">
                 <!-- <label> -->
-                    <input type="radio" name="category" value="cable"> Cable
+                    <input type="radio" name="category" value="cable" checked> Cable
                 <!-- </label> -->
                 <!-- <label> -->
                     <input type="radio" name="category" value="ntd"> NTD
@@ -44,8 +44,8 @@
                     <input type="radio" name="category" value="pcd"> PCD
                 <!-- </label> -->
             </div>
-
-            <div class="cable-form" id="cable-form">
+            <br>
+            <div class="cableForm-container" id="cableForm-container">
                 <label for="cableType">Type</label>
                 <select id="cableType">
                     <option value="select">Select</option>
@@ -77,10 +77,8 @@
                     <button type="submit" class="submit-close-btn" id="submit-close-btn">Cancel</button>
                 </div>
             </div>
-            <br>
-            <hr>
-            <br>
-            <div class="ntdForm-container">
+           
+            <div class="ntdForm-container" id="ntdForm-container">
                 <label for="ntdType">NTD Type</label>
                 <select name="ntdType" id="ntdType">
                     <option value="select">Select</option>
@@ -94,10 +92,8 @@
                 </div>
             </div>
 
-             <br>
-            <hr>
-            <br>
-            <div class="pcdForm-container">
+            
+            <div class="pcdForm-container" id="pcdForm-container">
                 <label for="pcdType">PCD Type</label>
                 <select name="pcdType" id="pcdType">
                     <option value="select">Select</option>
