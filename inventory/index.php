@@ -34,14 +34,18 @@
             <hr>
             
             <div class="add-menu">
-                <ul>
-                    <li><a href="#">Cable</a></li>
-                    <li><a href="#">NTD</a></li>
-                    <li><a href="#">PCD</a></li>
-                </ul>
+                <!-- <label> -->
+                    <input type="radio" name="category" value="cable"> Cable
+                <!-- </label> -->
+                <!-- <label> -->
+                    <input type="radio" name="category" value="ntd"> NTD
+                <!-- </label> -->
+                <!-- <label> -->
+                    <input type="radio" name="category" value="pcd"> PCD
+                <!-- </label> -->
             </div>
 
-            <div class="cable-form">
+            <div class="cable-form" id="cable-form">
                 <label for="cableType">Type</label>
                 <select id="cableType">
                     <option value="select">Select</option>
@@ -67,7 +71,21 @@
                     <option value="160">160m</option>
                     <option value="300">300m</option>
                     <option value="500">500m</option>
-
+                </select>
+                <div class="submit-add-btn-container">
+                    <button type="submit" class="submit-add-btn" id="submit-add-btn">Add</button>
+                    <button type="submit" class="submit-close-btn" id="submit-close-btn">Cancel</button>
+                </div>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div class="ntdForm-container">
+                <label for="ntdType">NTD Type</label>
+                <select name="ntdType" id="ntdType">
+                    <option value="select">Select</option>
+                    <option value="4-Port">4-Port</option>
+                    <option value="1-Port">1-Port</option>
                 </select>
 
                 <div class="submit-add-btn-container">
@@ -75,6 +93,26 @@
                     <button type="submit" class="submit-close-btn" id="submit-close-btn">Cancel</button>
                 </div>
             </div>
+
+             <br>
+            <hr>
+            <br>
+            <div class="pcdForm-container">
+                <label for="pcdType">PCD Type</label>
+                <select name="pcdType" id="pcdType">
+                    <option value="select">Select</option>
+                    <option value="corning">Corning</option>
+                    <option value="madison">Madison</option>
+                </select>
+
+                <div class="submit-add-btn-container">
+                    <button type="submit" class="submit-add-btn" id="submit-add-btn">Add</button>
+                    <button type="submit" class="submit-close-btn" id="submit-close-btn">Cancel</button>
+                </div>
+            </div>
+
+
+
             
         </div>
     </div>
