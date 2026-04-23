@@ -88,3 +88,26 @@ materialRadio.forEach(material => {
 
     })
 })
+
+const cableType = document.getElementById('cableType');
+
+function updateLengthFields () {
+
+    const internal = document.getElementById('cableLengthInternal');
+    const external = document.getElementById('cableLengthExternal');
+
+    // hide
+    internal.style.display = 'none';
+    external.style.display = 'none';
+
+
+    if (cableType.value === 'internal'){
+        internal.style.display = 'block';
+    }  else if (cableType.value === 'external') {
+        external.style.display = 'block';
+    }
+}
+
+cableType.addEventListener('change', updateLengthFields);
+
+window.addEventListener("DOMContentLoaded", updateLengthFields);

@@ -222,6 +222,7 @@ main .section3-container .teams-container{
     justify-content: center;
     background-color: white;
     padding: 30px 50px;
+    width: 400px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.2);
    
@@ -230,7 +231,7 @@ main .section3-container .teams-container{
 
 .modal-container .add-menu ul{
     display: flex;
-    gap: 20px;
+    gap: 10px;
 }
 
 .cable-form{
@@ -242,3 +243,8 @@ main .section3-container .teams-container{
     margin-top: 20px;
 }
 
+.cableForm-container{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}

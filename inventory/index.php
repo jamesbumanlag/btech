@@ -32,7 +32,7 @@
         <div class="modal-container" id="modal-container">
             <h2>Add Item</h2>
             <hr>
-            
+            <br>
             <div class="add-menu">
                 <!-- <label> -->
                     <input type="radio" name="category" value="cable" checked> Cable
@@ -46,13 +46,15 @@
             </div>
             <br>
             <div class="cableForm-container" id="cableForm-container">
+                
                 <label for="cableType">Type</label>
                 <select id="cableType">
-                    <option value="select">Select</option>
                     <option value="internal">Internal</option>
                     <option value="external">External</option>
                 </select>
-                <label for="cableLengthInternal">Length</label>
+
+
+                <label for="cableLengthInternal" style="display: none;">Length</label>
                 <select id="cableLengthInternal">
                     <option value="select">Select</option>
                     <option value="5">5m</option>
@@ -61,7 +63,7 @@
                     <option value="30">30m</option>
                 </select>
 
-                <label for="cableLengthExternal">Length</label>
+                <label for="cableLengthExternal" style="display: none;">Length</label>
                 <select id="cableLengthExternal">
                     <option value="select">Select</option>
                     <option value="40">40m</option>
@@ -72,13 +74,18 @@
                     <option value="300">300m</option>
                     <option value="500">500m</option>
                 </select>
-                <div class="submit-add-btn-container">
+
+                 <div class="submit-add-btn-container" style="display: block;">
                     <button type="submit" class="submit-add-btn" id="submit-add-btn">Add</button>
                     <button type="submit" class="submit-close-btn" id="submit-close-btn">Cancel</button>
-                </div>
+                
             </div>
-           
-            <div class="ntdForm-container" id="ntdForm-container">
+            </div>
+
+          
+
+
+            <div class="ntdForm-container" id="ntdForm-container" style="display: none;">
                 <label for="ntdType">NTD Type</label>
                 <select name="ntdType" id="ntdType">
                     <option value="select">Select</option>
@@ -93,7 +100,7 @@
             </div>
 
             
-            <div class="pcdForm-container" id="pcdForm-container">
+            <div class="pcdForm-container" id="pcdForm-container" style="display: none;">
                 <label for="pcdType">PCD Type</label>
                 <select name="pcdType" id="pcdType">
                     <option value="select">Select</option>
